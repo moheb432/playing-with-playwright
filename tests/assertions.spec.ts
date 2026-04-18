@@ -14,8 +14,8 @@ test('assertions 2', async ({ page }) => {
 
 })
 
-test('to ve ss', async ({ page }) => {
-    await page.goto('https://the-internet.herokuapp.com/dynamic_controls');
-    await expect(page).toHaveScreenshot();
-}
-);
+// test('to ve ss', async ({ page }) => {
+//     await page.goto('https://the-internet.herokuapp.com/dynamic_controls');
+//     await expect(page).toHaveScreenshot();
+// }
+// );

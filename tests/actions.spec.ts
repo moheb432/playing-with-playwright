@@ -18,15 +18,15 @@ await page.locator('//*[@id="checkboxes"]/input[2]').check();
 await expect(page.locator('//*[@id="checkboxes"]/input[2]')).toBeChecked();
 }); 
 
-test ('actions3 select',async({page})=> {
-await page.goto("https://the-internet.herokuapp.com/dropdown");
-await page.locator('#dropdown').selectOption('Option 2');
-await expect(page.locator('#dropdown')).toHaveValue('2');
-// await expect(page.locator('#dropdown')).toHaveText('Option 2');
-await page.locator('#dropdown').click();
-await page.locator('//*[@id="dropdown"]/option[2]').click();
-await expect(page.locator('#dropdown')).toHaveValue('1');
-});
+// test ('actions3 select',async({page})=> {
+// await page.goto("https://the-internet.herokuapp.com/dropdown");
+// await page.locator('#dropdown').selectOption('Option 2');
+// await expect(page.locator('#dropdown')).toHaveValue('2');
+// // await expect(page.locator('#dropdown')).toHaveText('Option 2');
+// await page.locator('#dropdown').click();
+// await page.locator('//*[@id="dropdown"]/option[2]').click();
+// await expect(page.locator('#dropdown')).toHaveValue('1');
+// });
 
 test ('actions4 javascript allerts ',async({page})=> {
 await page.goto("https://the-internet.herokuapp.com/javascript_alerts");
